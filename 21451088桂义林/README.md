@@ -21,3 +21,9 @@ Homework 1: Draw a triangle.
 Homework 2: Model-View Transformation -- Simple Solar System Simulation.
 
 <img src="https://raw.githubusercontent.com/insaneyilin/opengl2015/master/21451088桂义林/OpenGL_HW2/hw2_screenshot.gif" width="400" height="300">
+
+<br />
+
+Homework 3: Light and Material -- Simple Solar System Simulation.
+
+<img src="https://raw.githubusercontent.com/insaneyilin/opengl2015/master/21451088桂义林/OpenGL_HW3/hw3_screenshot.gif" width="400" height="300">

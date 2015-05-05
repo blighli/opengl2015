@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0822008-7F7E-4DF9-BAE7-DF7705984B01</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OpenGL_Z14030917韩坚</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>573D62C632843EA2B26552113DFD64E26401307A</key>
+		<string>https://github.com/hjandyz/opengl2015.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Z14030917韩坚/OpenGL_Z14030917韩坚01/OpenGL_Z14030917韩坚.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>573D62C632843EA2B26552113DFD64E26401307A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hjandyz/opengl2015.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>573D62C632843EA2B26552113DFD64E26401307A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>573D62C632843EA2B26552113DFD64E26401307A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>opengl2015</string>
+		</dict>
+	</array>
+</dict>
+</plist>

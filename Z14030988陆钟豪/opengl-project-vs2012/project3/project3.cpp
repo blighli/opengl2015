@@ -99,7 +99,7 @@ int main(int argc, char* argv[]) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_STENCIL);
 	glutInitWindowSize(800, 600);
-	glutCreateWindow("ADS Lighting, Phong Shading");
+	glutCreateWindow("Phong Shading");
     glutReshapeFunc(ChangeSize);
     glutDisplayFunc(RenderScene);
 

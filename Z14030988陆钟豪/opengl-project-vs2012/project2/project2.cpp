@@ -131,7 +131,7 @@ void RenderScene(void) {
             modelViewMatrix.PushMatrix();
             {
                 modelViewMatrix.Rotate(yEarthRot, 0.0f, 1.0f, 0.0f);
-                modelViewMatrix.Translate(0.0f, 0.0f, 5.0f);
+                modelViewMatrix.Translate(0.0f, 0.0f, 3.5f);
                 shaderManager.UseStockShader(GLT_SHADER_POINT_LIGHT_DIFF, transformPipeline.GetModelViewMatrix(), 
                                      transformPipeline.GetProjectionMatrix(), vLightEyePos, vEarthColor);
                 earthBatch.Draw();

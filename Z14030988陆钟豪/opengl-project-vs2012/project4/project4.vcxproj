@@ -78,7 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Tunnel.cpp" />
+    <ClCompile Include="project4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GLTools\GLTools.vcxproj">

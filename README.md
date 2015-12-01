@@ -1,4 +1,4 @@
-# opengl2015
+# OpenGL2015
 
 从这个repo进行fork，从你自己账户的repo中clone
 

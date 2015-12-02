@@ -8,10 +8,10 @@
     <ClCompile Include="..\GLWindow\QWndApp.cpp">
       <Filter>GLWindow</Filter>
     </ClCompile>
-    <ClCompile Include="ApplicationDelegate.cpp" />
-    <ClCompile Include="..\GLWindow\Global.cpp">
+    <ClCompile Include="..\GLWindow\GLWindow.cpp">
       <Filter>GLWindow</Filter>
     </ClCompile>
+    <ClCompile Include="AppDelegate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -24,10 +24,10 @@
     <ClInclude Include="..\GLWindow\QWndApp.h">
       <Filter>GLWindow</Filter>
     </ClInclude>
-    <ClInclude Include="..\GLWindow\Global.h">
+    <ClInclude Include="..\GLWindow\GLWindow.h">
       <Filter>GLWindow</Filter>
     </ClInclude>
-    <ClInclude Include="ApplicationDelegate.h" />
+    <ClInclude Include="AppDelegate.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GLWindow">

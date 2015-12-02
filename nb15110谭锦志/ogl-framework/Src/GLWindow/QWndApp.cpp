@@ -1,10 +1,8 @@
 #include "QWndApp.h"
-#include "Global.h"
 
 QWndApp::QWndApp()
 {
 	m_pMainWnd = NULL;
-	g_pWndApp = this;  // 保存全局app指针
 }
 
 QWndApp::~QWndApp()

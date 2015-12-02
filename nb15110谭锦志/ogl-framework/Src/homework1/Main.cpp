@@ -6,8 +6,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include "Main.h"
-#include "../GLWindow/Global.h"
-#include "../GLWindow/QWndApp.h"
+#include "AppDelegate.h"
 
 //link to libraries
 //#pragma comment(lib, "opengl32.lib")
@@ -15,17 +14,16 @@
 //#pragma comment(lib, "winmm.lib")
 
 // WinMain Èë¿Úº¯Êý
-int WINAPI _tWinMain(	HINSTANCE	hInstance,			//Instance
-						HINSTANCE	hPrevInstance,		//Previous Instance
-						LPSTR		lpCmdLine,			//Command line params
-						int			nShowCmd)			//Window show state
-{
-	QWndApp *pWndApp = GlbGetApp();
-	assert(pWndApp);
 
-	pWndApp->InitInstance();
-	pWndApp->run();
-	pWndApp->ExitInstance();
+AppDelegate theApp;
+int WINAPI _tWinMain(	HINSTANCE	hInstance,			// Instance
+						HINSTANCE	hPrevInstance,		// Previous Instance
+						LPSTR		lpCmdLine,			// Command line params
+						int			nShowCmd)			// Window show state
+{
+	theApp.InitInstance();
+	theApp.run();
+	theApp.ExitInstance();
 
 	return true;
 }

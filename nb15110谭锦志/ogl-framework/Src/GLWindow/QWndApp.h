@@ -15,6 +15,6 @@ public:
 	virtual BOOL ExitInstance();   // ÍË³ö app
 	virtual void run();			   // ÔËÐÐ
 
-private:
+protected:
 	LPVOID m_pMainWnd;
 };

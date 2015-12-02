@@ -90,9 +90,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\GLWindow\Global.cpp" />
+    <ClCompile Include="..\GLWindow\QWnd.cpp" />
+    <ClCompile Include="..\GLWindow\QWndApp.cpp" />
+    <ClCompile Include="ApplicationDelegate.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\GLWindow\QWnd.h" />
+    <ClInclude Include="..\GLWindow\QWndApp.h" />
+    <ClInclude Include="..\GLWindow\stdafx.h" />
+    <ClInclude Include="..\GLWindow\Global.h" />
+    <ClInclude Include="ApplicationDelegate.h" />
     <ClInclude Include="Main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

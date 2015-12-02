@@ -1,6 +1,7 @@
-
+#pragma one
 #ifndef MAIN_H
 #define MAIN_H
+#include "../GLWindow/stdafx.h"
 
 //WinMain
 int WINAPI WinMain(	HINSTANCE	hInstance,			//Instance

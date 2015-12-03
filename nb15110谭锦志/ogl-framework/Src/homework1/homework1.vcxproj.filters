@@ -16,6 +16,9 @@
     <ClCompile Include="..\ShaderLoader\LoadShaders.cpp">
       <Filter>ShaderLoader</Filter>
     </ClCompile>
+    <ClCompile Include="..\ShaderLoader\Shader.cpp">
+      <Filter>ShaderLoader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -34,6 +37,9 @@
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="..\ShaderLoader\LoadShaders.h">
+      <Filter>ShaderLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ShaderLoader\Shader.h">
       <Filter>ShaderLoader</Filter>
     </ClInclude>
   </ItemGroup>

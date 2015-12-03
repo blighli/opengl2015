@@ -8,19 +8,19 @@ public:
 	~MainScene();
 
 	// 初始化
-	BOOL initGL(GLvoid);
+	BOOL initGL(GLvoid) override;
 
 	// 显示模式
-	void ViewMode();
+	void ViewMode() override;
 
 	// 绘制场景
-	BOOL DrawGL(GLvoid);
+	BOOL DrawGL(GLvoid) override;
 
 	// 更新窗口消息
-	BOOL UpdateGL(GLvoid);
+	BOOL UpdateGL(GLvoid) override;
 
 	// opengl窗口销毁前的处理
-	GLvoid DestroyGL(GLvoid);
+	GLvoid DestroyGL(GLvoid) override;
 
 private:
 	float m_posx;

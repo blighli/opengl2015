@@ -10,7 +10,6 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
 #include "LoadShaders.h"
-//#pragma comment(lib,"glew32s.lib")    // glew¿â
 
 #ifdef __cplusplus
 extern "C" {

@@ -11,7 +11,10 @@
 
 #pragma once
 #include "QWnd.h"
-#include <gl/glut.h> // opengl库
+#include "GL/glew.h" // 在glut之前包含glew
+#include "GL/wglew.h"
+#include "GL/glut.h" // opengl库
+#include "GL/freeglut.h"
 
 class GLWindow : public QWnd
 {
@@ -38,6 +41,11 @@ public:
 	// 提供子类对opengl销毁时的处理
 	virtual GLvoid DestroyGL(GLvoid);
 
+	virtual void ViewMode();
+
+	GLsizei GetWidth();
+	GLsizei GetHeight();
+
 	BOOL keyUp(int key);
 
 	virtual HRESULT OnKeyDown(WPARAM wParam, LPARAM lParam);
@@ -51,4 +59,6 @@ private:
 	HDC   m_hDc;		 // opengl渲染描述句柄
 	BOOL  m_keys[256];   // 保存键盘按键数组
 	GLuint m_timerFrame; // 绘图计时器
+	GLsizei m_width;
+	GLsizei m_height;
 };

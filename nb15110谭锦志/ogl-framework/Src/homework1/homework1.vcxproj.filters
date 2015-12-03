@@ -13,6 +13,9 @@
     </ClCompile>
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="..\ShaderLoader\LoadShaders.cpp">
+      <Filter>ShaderLoader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -30,10 +33,16 @@
     </ClInclude>
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="MainScene.h" />
+    <ClInclude Include="..\ShaderLoader\LoadShaders.h">
+      <Filter>ShaderLoader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GLWindow">
       <UniqueIdentifier>{2833157b-f410-43f6-9b8e-f5855d63d967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderLoader">
+      <UniqueIdentifier>{7855129d-9b65-4fe3-9add-ef0c636b90a0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

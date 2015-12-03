@@ -79,6 +79,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -93,6 +94,7 @@
     <ClCompile Include="..\GLWindow\GLWindow.cpp" />
     <ClCompile Include="..\GLWindow\QWnd.cpp" />
     <ClCompile Include="..\GLWindow\QWndApp.cpp" />
+    <ClCompile Include="..\ShaderLoader\LoadShaders.cpp" />
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainScene.cpp" />
@@ -102,6 +104,7 @@
     <ClInclude Include="..\GLWindow\QWnd.h" />
     <ClInclude Include="..\GLWindow\QWndApp.h" />
     <ClInclude Include="..\GLWindow\stdafx.h" />
+    <ClInclude Include="..\ShaderLoader\LoadShaders.h" />
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="MainScene.h" />

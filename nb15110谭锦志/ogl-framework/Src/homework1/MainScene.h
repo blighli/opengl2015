@@ -10,6 +10,9 @@ public:
 	// 初始化
 	BOOL initGL(GLvoid);
 
+	// 显示模式
+	void ViewMode();
+
 	// 绘制场景
 	BOOL DrawGL(GLvoid);
 

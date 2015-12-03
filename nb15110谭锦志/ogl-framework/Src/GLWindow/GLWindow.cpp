@@ -26,6 +26,21 @@ GLWindow::~GLWindow()
 // 创建opengl窗口
 BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int height)
 {
+	m_width = width;
+	m_height = height;
+
+	RECT windowRect = { 0, 0, width, height };
+	DWORD windowStyle = WS_OVERLAPPEDWINDOW;   // 预留做全屏
+	DWORD windowExStyle = WS_EX_APPWINDOW;     // 扩展样式
+
+	// 全屏处理 - 预留
+	
+	// 窗口样式
+	windowStyle = WS_POPUP;
+	windowExStyle |= WS_EX_TOPMOST;
+
+	::AdjustWindowRectEx(&windowRect, windowStyle, 0, windowExStyle); // 调整窗口
+
 	CreateEx(0, "OpenGL", title, WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN,
 		x, y, width, height, NULL, NULL);
 
@@ -35,7 +50,8 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 		return FALSE;		  // 不能获取DC
 	}
 
-	m_timerFrame = 1000;   // 初始化
+	m_timerFrame = 1000;      // 初始化
+	
 
 	GLuint PixelFormat;
 	static PIXELFORMATDESCRIPTOR pdf = {
@@ -79,7 +95,7 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 		// printf("2====error create context====");
 		return FALSE;      // 不能获得着色描述表
 	}
-	if (!wglMakeCurrent(m_hDc, tempContext))
+	if (!wglMakeCurrent(m_hDc, tempContext))  // 开启低版本opengl
 	{
 		DestroyGL();
 		// printf("3========");
@@ -92,7 +108,7 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 		return FALSE;      // glew初始化失败
 	}
 
-	// opengl 4.3 支持
+	// 开启 opengl 4.3 支持
 	GLint attribs[] = { WGL_CONTEXT_MAJOR_VERSION_ARB,  4,  // 主版本4
 		WGL_CONTEXT_MINOR_VERSION_ARB,  3,					// 次版本号3
 		WGL_CONTEXT_PROFILE_MASK_ARB,WGL_CONTEXT_COMPATIBILITY_PROFILE_BIT_ARB,//要求返回兼容模式环境,如果不指定或指定为WGL_CONTEXT_CORE_PROFILE_BIT_ARB会返回只包含核心功能的环境
@@ -113,12 +129,9 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 	{    //It's not possible to make a GL 4.x context. Use the old style context (GL 2.1 and before)
 		m_hRc = tempContext;
 	}
-
-	int version[2] = {1, 1};
-	glGetIntegerv(GL_MAJOR_VERSION, &version[0]);
-	glGetIntegerv(GL_MINOR_VERSION, &version[1]);
-
-	ResizeGLScene(width, height);  // 设置GL屏幕
+	RECT rect;		 // 客户区大小
+	::GetClientRect(m_hWnd, &rect);
+	ResizeGLScene(rect.right - rect.left, rect.bottom - rect.top);  // 设置GL屏幕 (注意，这里只使用客户区计算)
 	if (!initGL())   // 初始化opengl
 	{
 		DestroyGL();
@@ -149,10 +162,10 @@ GLvoid GLWindow::ResizeGLScene(GLsizei width, GLsizei height)
 	{
 		height = 1;  // 防止被0除
 	}
-	glViewport(0, 0, width, height);
 	m_width = width;
 	m_height = height;
-	ViewMode();  // 设置显示模式
+	glViewport(0, 0, width, height);
+	ViewMode();      // 设置显示模式
 }
 
 BOOL GLWindow::initGL(GLvoid)
@@ -214,7 +227,7 @@ GLsizei GLWindow::GetHeight()
 	return m_height;
 }
 
-BOOL GLWindow::keyUp(int key)
+BOOL GLWindow::keyDown(int key)
 {
 	return m_keys[key] == TRUE ? TRUE : FALSE;
 }

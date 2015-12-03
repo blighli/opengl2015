@@ -20,7 +20,7 @@ BOOL AppDelegate::InitInstance()
 	}
 	m_pMainWnd = (LPVOID)pMainWnd;  // ±£ÁôÒýÓÃ
 
-	pMainWnd->CreateGlWnd("ogl-framework", 30, 20, 800, 600);
+	pMainWnd->CreateGlWnd("ogl-framework", 200, 100, 800, 600);
 	pMainWnd->ShowWindow(SW_SHOW);
 	pMainWnd->UpdateWindow();
 

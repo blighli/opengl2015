@@ -1,6 +1,5 @@
 #include "MainScene.h"
 #include "../ShaderLoader/LoadShaders.h"
-
 #include <math.h>
 
 MainScene::MainScene()
@@ -29,9 +28,13 @@ void MainScene::ViewMode()
 
 	// 透视模式
 	gluPerspective(45.0f, this->GetWidth() / this->GetHeight(), 0.01f, 100.0f);
-	gluLookAt(0, 0, 5, 0, 0, 0, 0, 1, 0);
 
-	glMatrixMode(GL_MODELVIEW); // 选择模式观察矩阵
+	// 摄像机位置
+	gluLookAt(0, 0, 5, 0, 0, 0, 0, 1, 0); 
+
+	// 选择模式观察矩阵
+	glMatrixMode(GL_MODELVIEW); 
+
 	glLoadIdentity();
 }
 
@@ -46,10 +49,14 @@ BOOL MainScene::initGL(GLvoid)
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.5f);
 	glClearDepth(1.0f);
-	glDepthFunc(GL_LEQUAL);
+
 	// 选择深度测试方
+	glDepthFunc(GL_LEQUAL);
+	
 	glShadeModel(GL_SMOOTH);
-	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST); // 最精细的透视计算
+
+	// 最精细的透视计算
+	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST); 
 
 	////////
 	
@@ -86,12 +93,9 @@ BOOL MainScene::DrawGL(GLvoid)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);// 清除颜色和深度缓存
 
 	//////////////////////////////////////////////////////////////////////////
-	
 	glBindVertexArray(VAOs[Triangles]);
 	glDrawArrays(GL_TRIANGLES, 0, NumVertcies);
-	
 	//////////////////////////////////////////////////////////////////////////
-
 
 	glFlush(); // 刷新GL命令队列
 	return TRUE;
@@ -106,7 +110,7 @@ BOOL MainScene::UpdateGL(GLvoid)
 	* char A -> Z : 0x41 -> ... 递增 
 	*/
 
-	if (keyUp(VK_F1))
+	if (keyDown(VK_F1))
 	{
 		m_posx += 0.01f;
 	}

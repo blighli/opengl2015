@@ -8,14 +8,15 @@
 #include "Main.h"
 #include "AppDelegate.h"
 
-//link to libraries
-//#pragma comment(lib, "opengl32.lib")
-//#pragma comment(lib, "glu32.lib")
-//#pragma comment(lib, "winmm.lib")
+// link to libraries
+// #pragma comment(lib, "opengl32.lib")
+// #pragma comment(lib, "glu32.lib")
+// #pragma comment(lib, "winmm.lib")
 
 // WinMain 入口函数
 
 AppDelegate theApp;  // 全局变量
+
 int WINAPI _tWinMain(	HINSTANCE	hInstance,			// Instance
 						HINSTANCE	hPrevInstance,		// Previous Instance
 						LPSTR		lpCmdLine,			// Command line params

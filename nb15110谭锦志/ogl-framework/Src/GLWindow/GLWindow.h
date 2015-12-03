@@ -46,7 +46,7 @@ public:
 	GLsizei GetWidth();
 	GLsizei GetHeight();
 
-	BOOL keyUp(int key);
+	BOOL keyDown(int key);
 
 	virtual HRESULT OnKeyDown(WPARAM wParam, LPARAM lParam);
 	virtual HRESULT OnKeyUp(WPARAM wParam, LPARAM lParam);

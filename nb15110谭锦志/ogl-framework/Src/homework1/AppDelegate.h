@@ -14,8 +14,4 @@ public:
 
 	// 退出程序
 	virtual BOOL ExitInstance();
-
-private:
 };
-
-//extern ApplicationDelegate theApp; // 全局app

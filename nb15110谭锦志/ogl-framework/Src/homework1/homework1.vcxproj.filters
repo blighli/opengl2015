@@ -12,6 +12,7 @@
       <Filter>GLWindow</Filter>
     </ClCompile>
     <ClCompile Include="AppDelegate.cpp" />
+    <ClCompile Include="MainScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -28,6 +29,7 @@
       <Filter>GLWindow</Filter>
     </ClInclude>
     <ClInclude Include="AppDelegate.h" />
+    <ClInclude Include="MainScene.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GLWindow">

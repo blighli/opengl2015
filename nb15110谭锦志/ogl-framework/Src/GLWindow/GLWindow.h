@@ -1,5 +1,6 @@
 #pragma once
 #include "QWnd.h"
+#include <gl/glut.h> // opengl库
 
 class GLWindow : public QWnd
 {
@@ -7,8 +8,36 @@ public:
 	GLWindow();
 	~GLWindow();
 
+	BOOL CreateGlWnd(const char* title, int x, int y, int width, int height);
+
 	HRESULT OnClose(WPARAM wParam, LPARAM lParam);
 	LRESULT OnDestroy(WPARAM wParam, LPARAM lParam);
-private:
 
+	// 改变opengl窗口大小
+	GLvoid ResizeGLScene(GLsizei width, GLsizei height);
+
+	// 提供子类对opengl的初始化操作
+	virtual BOOL initGL(GLvoid);
+
+	// 提供子类opengl绘制函数
+	virtual BOOL DrawGL(GLvoid);
+
+	virtual BOOL UpdateGL(GLvoid);
+
+	// 提供子类对opengl销毁时的处理
+	virtual GLvoid DestroyGL(GLvoid);
+
+	BOOL keyUp(int key);
+
+	virtual HRESULT OnKeyDown(WPARAM wParam, LPARAM lParam);
+	virtual HRESULT OnKeyUp(WPARAM wParam, LPARAM lParam);
+	virtual HRESULT OnSize(WPARAM wParam, LPARAM lParam);
+	virtual HRESULT OnTimer(WPARAM wParam, LPARAM lParam);
+	virtual HRESULT OnPaint(WPARAM wParam, LPARAM lParam);
+
+private:
+	HGLRC m_hRc;		 // 窗口着色描述表句柄
+	HDC   m_hDc;		 // opengl渲染描述句柄
+	BOOL  m_keys[256];   // 保存键盘按键数组
+	GLuint m_timerFrame; // 绘图计时器
 };

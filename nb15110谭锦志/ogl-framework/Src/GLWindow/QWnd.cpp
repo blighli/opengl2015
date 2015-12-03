@@ -74,7 +74,7 @@ BOOL QWnd::PreCreateWindow(CREATESTRUCT& cs)
 	wcex.hInstance = cs.hInstance;
 	wcex.hIcon = ::LoadIcon(NULL, IDI_APPLICATION);
 	wcex.hIconSm = ::LoadIcon(NULL, IDI_APPLICATION);
-	wcex.hbrBackground = (HBRUSH)::GetStockObject(GRAY_BRUSH);
+	wcex.hbrBackground = (HBRUSH)::GetStockObject(BLACK_BRUSH);
 	wcex.hCursor = ::LoadCursor(NULL, IDC_ARROW);
 
 	wcex.lpszMenuName = NULL;
@@ -150,6 +150,7 @@ BOOL QWnd::ShowWindow(int nShowCmd)
 	assert(IsWindow(m_hWnd));
 	::ShowWindow(m_hWnd, nShowCmd);
 	::SetForegroundWindow(m_hWnd);  // 提升窗口优先级，避免被其他窗口挡住
+	::SetFocus(m_hWnd);
 	return TRUE;
 }
 

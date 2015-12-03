@@ -95,6 +95,7 @@
     <ClCompile Include="..\GLWindow\QWndApp.cpp" />
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\GLWindow\GLWindow.h" />
@@ -103,6 +104,7 @@
     <ClInclude Include="..\GLWindow\stdafx.h" />
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="MainScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

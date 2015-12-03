@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "../GLWindow/GLWindow.h"
+#include "MainScene.h"
 
 AppDelegate::AppDelegate()
 {
@@ -11,20 +11,16 @@ AppDelegate::~AppDelegate()
 
 }
 
-//ApplicationDelegate theApp;
 BOOL AppDelegate::InitInstance()
 {
-	GLWindow *pMainWnd = new GLWindow();
-	assert(pMainWnd);
-	m_pMainWnd = (LPVOID)pMainWnd;
-
-	BOOL bRet = pMainWnd->CreateEx(0, "OpenGL", "ogl-framework", WS_OVERLAPPEDWINDOW | WS_VISIBLE,
-		CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, NULL, NULL);
-	if (!bRet)
+	MainScene *pMainWnd = new MainScene();
+	if (NULL == pMainWnd)
 	{
-		return FALSE;  // 创建窗口GLWindow窗口失败
+		return 0; // 窗口创建失败
 	}
+	m_pMainWnd = (LPVOID)pMainWnd;  // 保留指针，程序退出时将其delete
 
+	pMainWnd->CreateGlWnd("ogl-framework", 30, 20, 800, 600);
 	pMainWnd->ShowWindow(SW_SHOW);
 	pMainWnd->UpdateWindow();
 

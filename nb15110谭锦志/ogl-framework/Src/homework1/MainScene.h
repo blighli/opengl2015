@@ -1,5 +1,5 @@
 #pragma once
-#include "../GLWindow/GLWindow.h"
+#include "../GLWindow/GLWindow.h"  // 使用GLWindow ： 基于win32封装的窗口应用类库
 
 class MainScene : public GLWindow
 {

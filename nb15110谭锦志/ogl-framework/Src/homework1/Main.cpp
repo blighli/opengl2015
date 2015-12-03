@@ -15,14 +15,14 @@
 
 // WinMain 入口函数
 
-AppDelegate theApp;
+AppDelegate theApp;  // 全局变量
 int WINAPI _tWinMain(	HINSTANCE	hInstance,			// Instance
 						HINSTANCE	hPrevInstance,		// Previous Instance
 						LPSTR		lpCmdLine,			// Command line params
 						int			nShowCmd)			// Window show state
 {
-	theApp.InitInstance();
-	theApp.run();
+	theApp.InitInstance();  
+	theApp.run();		    
 	theApp.ExitInstance();
 
 	return true;

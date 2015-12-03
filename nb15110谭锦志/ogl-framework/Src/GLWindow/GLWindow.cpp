@@ -1,5 +1,16 @@
+/*
+*  author : 谭锦志
+*  email  : apanoo@126.com
+*  time   : 2014 07 20
+*  ps     : 基于win32 API封装
+*			支持win32标准控件完全自绘
+*			支持opengl
+*  参考    : MFC实现机制
+*  use     : 方便编写windows下图形应用及插件
+*/
+
 #include "GLWindow.h"
-#include <stdio.h>
+// #include <stdio.h>
 
 GLWindow::GLWindow()
 {
@@ -49,7 +60,7 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 	if (!(PixelFormat = ChoosePixelFormat(m_hDc, &pdf)))  // 寻找相应像素格式
 	{
 		DestroyGL();  // 销毁
-					  // printf("1====error choose====");
+		// printf("1====error choose====");
 		return FALSE;
 	}
 	if (!SetPixelFormat(m_hDc, PixelFormat, &pdf))

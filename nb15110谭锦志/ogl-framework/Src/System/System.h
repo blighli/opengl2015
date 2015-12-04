@@ -1,20 +1,9 @@
 #pragma once
 #include <stdio.h>
 #include <time.h>
+#include <string>
 
 namespace apanoo {
-
-	struct Time
-	{
-		int year;
-		int month;
-		int day;
-
-		int hour;
-		int min;
-		int sec;
-	};
-
 	class System
 	{
 	private:
@@ -36,6 +25,6 @@ namespace apanoo {
 	public:
 		static System * GetInstance();  // Instance
 
-		Time* SystemTime();
+		std::string GetSystemTime();
 	};
 }

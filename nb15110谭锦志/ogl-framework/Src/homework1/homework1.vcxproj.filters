@@ -22,6 +22,9 @@
     <ClCompile Include="..\Tools\ScreenShot\ScreenShot.cpp">
       <Filter>Tools\ScreenShot</Filter>
     </ClCompile>
+    <ClCompile Include="..\System\System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -48,6 +51,9 @@
     <ClInclude Include="..\Tools\ScreenShot\ScreenShot.h">
       <Filter>Tools\ScreenShot</Filter>
     </ClInclude>
+    <ClInclude Include="..\System\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GLWindow">
@@ -64,6 +70,9 @@
     </Filter>
     <Filter Include="Tools\ScreenShot">
       <UniqueIdentifier>{05119733-8ef0-475a-9e88-08526182f77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{3dcff4c8-12ce-459f-a875-1211ae8948dd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -12,5 +12,5 @@ public:
 	ScreenShot();
 	~ScreenShot();
 
-	void GrabScreen(GLWindow* pWnd, const char* file);
+	void GrabScreen(GLWindow* pWnd);
 };

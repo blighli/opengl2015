@@ -5,7 +5,8 @@
 #include "../Tools/TextureLoader/TextureLoader.h" // texture加载tool
 #include "../Tools/ScreenShot/ScreenShot.h"       // 屏幕截图
 
-#include <stdio.h>
+#include <string>
+#include "../System/System.h"
 
 #ifdef _DEBUG
 #pragma comment (lib, "GLToolsd.lib")
@@ -163,9 +164,9 @@ BOOL MainScene::UpdateGL(GLvoid)
 	* char A -> Z : 0x41 -> ... 递增 
 	*/
 
-	if (keyDown(VK_F1))
+	if (keyDown(VK_F1))  // 按下F1 截屏并保存为bmp
 	{
-		m_screenShot->GrabScreen(this, "screen_shot.bmp");
+		m_screenShot->GrabScreen(this);
 	}
 
 	return TRUE;

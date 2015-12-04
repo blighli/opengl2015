@@ -1,5 +1,7 @@
 #include "ScreenShot.h"
 #include "../../GLWindow/GLWindow.h"
+#include "../../System/System.h"
+#include <string>
 
 ScreenShot::ScreenShot()
 {
@@ -11,7 +13,7 @@ ScreenShot::~ScreenShot()
 
 }
 
-void ScreenShot::GrabScreen(GLWindow* pWnd, const char* file = "grab.bmp")
+void ScreenShot::GrabScreen(GLWindow* pWnd)
 {
 	FILE* pDummyFile;    // 用于保存bmp数据的文件指针
 	FILE* pWritingFile;  // 用于读取
@@ -40,7 +42,12 @@ void ScreenShot::GrabScreen(GLWindow* pWnd, const char* file = "grab.bmp")
 		exit(0);
 	}
 
-	pWritingFile = fopen(file, "wb");
+	std::string file_name = std::string("screenshot/grab_screen ");
+	std::string sys_time = apanoo::System::GetInstance()->GetSystemTime();
+
+	std::string full_file_name = file_name + sys_time + std::string(".bmp");   // 截屏文件增加系统时间戳
+
+	pWritingFile = fopen(full_file_name.c_str(), "wb");
 	if (pWritingFile == 0) {
 		exit(0);
 	}

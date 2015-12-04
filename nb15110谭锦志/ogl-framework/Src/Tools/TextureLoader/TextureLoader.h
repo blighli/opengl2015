@@ -17,9 +17,6 @@ public:
 	TextureLoader ();
 	~TextureLoader ();
 
-	// 截屏函数
-	void GrabScreen(GLWindow* pWnd, const char* file);
-
 	// 加载位图函数
 	GLuint LoadBitMapTexture(const char* file);
 

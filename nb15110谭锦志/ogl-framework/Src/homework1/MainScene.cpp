@@ -3,6 +3,7 @@
 #include <math.h>
 
 #include "../Tools/TextureLoader/TextureLoader.h" // texture加载tool
+#include "../Tools/ScreenShot/ScreenShot.h"       // 屏幕截图
 
 #include <stdio.h>
 
@@ -28,14 +29,17 @@ GLfloat LightPosition[] = { 0.0f, 0.0f, 0.0f, 1.0f };					// 定义光源的位置
 
 MainScene::MainScene()
 {
-	m_posx = -1.5f;
 	m_texLoader = NULL;
+	m_screenShot = NULL;
 }
 
 MainScene::~MainScene()
 {
 	if ( NULL != m_texLoader) {
 		m_texLoader = NULL;
+	}
+	if (NULL != m_screenShot) {
+		m_screenShot = NULL;
 	}
 }
 
@@ -161,7 +165,7 @@ BOOL MainScene::UpdateGL(GLvoid)
 
 	if (keyDown(VK_F1))
 	{
-		m_posx += 0.01f;
+		m_screenShot->GrabScreen(this, "screen_shot.bmp");
 	}
 
 	return TRUE;

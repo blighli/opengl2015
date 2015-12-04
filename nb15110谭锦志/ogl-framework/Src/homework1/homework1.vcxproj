@@ -95,6 +95,7 @@
     <ClCompile Include="..\GLWindow\GLWindow.cpp" />
     <ClCompile Include="..\GLWindow\QWnd.cpp" />
     <ClCompile Include="..\GLWindow\QWndApp.cpp" />
+    <ClCompile Include="..\Tools\ScreenShot\ScreenShot.cpp" />
     <ClCompile Include="..\Tools\ShaderLoader\LoadShaders.cpp" />
     <ClCompile Include="..\Tools\TextureLoader\TextureLoader.cpp" />
     <ClCompile Include="AppDelegate.cpp" />
@@ -106,6 +107,7 @@
     <ClInclude Include="..\GLWindow\QWnd.h" />
     <ClInclude Include="..\GLWindow\QWndApp.h" />
     <ClInclude Include="..\GLWindow\stdafx.h" />
+    <ClInclude Include="..\Tools\ScreenShot\ScreenShot.h" />
     <ClInclude Include="..\Tools\ShaderLoader\LoadShaders.h" />
     <ClInclude Include="..\Tools\TextureLoader\TextureLoader.h" />
     <ClInclude Include="AppDelegate.h" />

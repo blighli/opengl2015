@@ -19,6 +19,9 @@
     <ClCompile Include="..\Tools\ShaderLoader\LoadShaders.cpp">
       <Filter>Tools\ShaderLoader</Filter>
     </ClCompile>
+    <ClCompile Include="..\Tools\ScreenShot\ScreenShot.cpp">
+      <Filter>Tools\ScreenShot</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -42,6 +45,9 @@
     <ClInclude Include="..\Tools\ShaderLoader\LoadShaders.h">
       <Filter>Tools\ShaderLoader</Filter>
     </ClInclude>
+    <ClInclude Include="..\Tools\ScreenShot\ScreenShot.h">
+      <Filter>Tools\ScreenShot</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GLWindow">
@@ -55,6 +61,9 @@
     </Filter>
     <Filter Include="Tools\ShaderLoader">
       <UniqueIdentifier>{8d91dda6-90f9-410e-8f8c-3c89f6b7ee1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ScreenShot">
+      <UniqueIdentifier>{05119733-8ef0-475a-9e88-08526182f77d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

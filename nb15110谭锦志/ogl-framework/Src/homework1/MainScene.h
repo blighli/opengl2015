@@ -2,6 +2,7 @@
 #include "../GLWindow/GLWindow.h"  // 使用GLWindow ： 基于win32封装的窗口应用类库
 
 class TextureLoader;
+class ScreenShot;
 
 class MainScene : public GLWindow
 {
@@ -25,6 +26,6 @@ public:
 	GLvoid DestroyGL(GLvoid) override;
 
 private:
-	float m_posx;
-	TextureLoader *m_texLoader;
+	TextureLoader *m_texLoader;  // 纹理加载工具
+	ScreenShot *m_screenShot;	 // 屏幕截图工具
 };

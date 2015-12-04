@@ -1,12 +1,12 @@
 #include "MainScene.h"
-#include "../Tools/ShaderLoader/LoadShaders.h"    // shader加载tool
+#include "../Tools/ShaderLoader/LoadShaders.h"    // shader加载
 #include <math.h>
 
-#include "../Tools/TextureLoader/TextureLoader.h" // texture加载tool
+#include "../Tools/TextureLoader/TextureLoader.h" // texture加载
 #include "../Tools/ScreenShot/ScreenShot.h"       // 屏幕截图
 
 #include <string>
-#include "../System/System.h"
+#include "../System/System.h"					  // 系统功能
 
 #ifdef _DEBUG
 #pragma comment (lib, "GLToolsd.lib")

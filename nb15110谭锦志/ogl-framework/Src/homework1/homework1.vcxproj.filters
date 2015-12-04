@@ -13,8 +13,11 @@
     </ClCompile>
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="MainScene.cpp" />
-    <ClCompile Include="..\ShaderLoader\LoadShaders.cpp">
-      <Filter>ShaderLoader</Filter>
+    <ClCompile Include="..\Tools\TextureLoader\TextureLoader.cpp">
+      <Filter>Tools\TextureLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tools\ShaderLoader\LoadShaders.cpp">
+      <Filter>Tools\ShaderLoader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -33,16 +36,25 @@
     </ClInclude>
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="MainScene.h" />
-    <ClInclude Include="..\ShaderLoader\LoadShaders.h">
-      <Filter>ShaderLoader</Filter>
+    <ClInclude Include="..\Tools\TextureLoader\TextureLoader.h">
+      <Filter>Tools\TextureLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\ShaderLoader\LoadShaders.h">
+      <Filter>Tools\ShaderLoader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GLWindow">
       <UniqueIdentifier>{2833157b-f410-43f6-9b8e-f5855d63d967}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ShaderLoader">
-      <UniqueIdentifier>{7855129d-9b65-4fe3-9add-ef0c636b90a0}</UniqueIdentifier>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{0c92387b-6d4a-4f27-8783-8b1a5b1b2efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\TextureLoader">
+      <UniqueIdentifier>{198450a3-f01f-4843-af64-d0e4bbbc3bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ShaderLoader">
+      <UniqueIdentifier>{8d91dda6-90f9-410e-8f8c-3c89f6b7ee1e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

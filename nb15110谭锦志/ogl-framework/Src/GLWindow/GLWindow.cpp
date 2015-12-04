@@ -10,12 +10,11 @@
 */
 
 #include "GLWindow.h"
-#pragma comment(lib,"glew32s.lib")    // glew库
-
 
 GLWindow::GLWindow()
 {
 	m_hRc = 0;
+	::ZeroMemory(m_keys, sizeof(m_keys)); // 清空键盘缓存
 }
 
 GLWindow::~GLWindow()
@@ -42,11 +41,11 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 	::AdjustWindowRectEx(&windowRect, windowStyle, 0, windowExStyle); // 调整窗口
 
 	CreateEx(0, "OpenGL", title, WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN,
-		x, y, width, height, NULL, NULL);
+		x, y, windowRect.right - windowRect.left, windowRect.bottom - windowRect.top, NULL, NULL);
 
 	if (!(m_hDc = GetDC(m_hWnd)))  // 获取DC
 	{
-		DestroyGL();  // 销毁
+		DestroyGL();		  // 销毁
 		return FALSE;		  // 不能获取DC
 	}
 
@@ -126,12 +125,13 @@ BOOL GLWindow::CreateGlWnd(const char* title, int x, int y, int width, int heigh
 		}
 	}
 	else
-	{    //It's not possible to make a GL 4.x context. Use the old style context (GL 2.1 and before)
+	{    // 不支持opengl4.X 还原为opengl 2.1
 		m_hRc = tempContext;
 	}
 	RECT rect;		 // 客户区大小
 	::GetClientRect(m_hWnd, &rect);
 	ResizeGLScene(rect.right - rect.left, rect.bottom - rect.top);  // 设置GL屏幕 (注意，这里只使用客户区计算)
+
 	if (!initGL())   // 初始化opengl
 	{
 		DestroyGL();
@@ -151,7 +151,7 @@ HRESULT GLWindow::OnClose(WPARAM wParam, LPARAM lParam)
 
 LRESULT GLWindow::OnDestroy(WPARAM wParam, LPARAM lParam)
 {
-	DestroyGL(); // 退出程序前销毁opengl
+	DestroyGL();     // 退出程序前销毁opengl
 	PostQuitMessage(0);
 	return 0;
 }
@@ -164,7 +164,7 @@ GLvoid GLWindow::ResizeGLScene(GLsizei width, GLsizei height)
 	}
 	m_width = width;
 	m_height = height;
-	glViewport(0, 0, width, height);
+	glViewport(0, 0, (GLsizei)width, (GLsizei)height);  
 	ViewMode();      // 设置显示模式
 }
 

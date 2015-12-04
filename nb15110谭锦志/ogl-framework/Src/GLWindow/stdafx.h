@@ -14,3 +14,13 @@
 #include <windows.h>
 #include <tchar.h>
 #include <assert.h>
+
+#include "GL/glew.h" // 在glut之前包含glew
+#include "GL/wglew.h"
+#include "GL/glut.h" // opengl库
+#include "GL/freeglut.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#pragma comment(lib,"glew32s.lib")    // glew库

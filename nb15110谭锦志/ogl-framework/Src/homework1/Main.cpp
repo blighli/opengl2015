@@ -17,7 +17,7 @@
 
 AppDelegate theApp;  // 全局变量
 
-int WINAPI _tWinMain(	HINSTANCE	hInstance,			// Instance
+int WINAPI WinMain(	HINSTANCE	hInstance,			// Instance
 						HINSTANCE	hPrevInstance,		// Previous Instance
 						LPSTR		lpCmdLine,			// Command line params
 						int			nShowCmd)			// Window show state

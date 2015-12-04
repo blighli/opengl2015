@@ -11,10 +11,6 @@
 
 #pragma once
 #include "QWnd.h"
-#include "GL/glew.h" // 在glut之前包含glew
-#include "GL/wglew.h"
-#include "GL/glut.h" // opengl库
-#include "GL/freeglut.h"
 
 class GLWindow : public QWnd
 {
@@ -46,7 +42,7 @@ public:
 	GLsizei GetWidth();
 	GLsizei GetHeight();
 
-	BOOL keyDown(int key);
+	BOOL keyDown(int key);  // 暂时保留keyUp的封装
 
 	virtual HRESULT OnKeyDown(WPARAM wParam, LPARAM lParam);
 	virtual HRESULT OnKeyUp(WPARAM wParam, LPARAM lParam);

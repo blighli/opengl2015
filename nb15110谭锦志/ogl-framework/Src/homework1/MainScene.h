@@ -1,6 +1,8 @@
 #pragma once
 #include "../GLWindow/GLWindow.h"  // 使用GLWindow ： 基于win32封装的窗口应用类库
 
+class TextureLoader;
+
 class MainScene : public GLWindow
 {
 public:
@@ -24,4 +26,5 @@ public:
 
 private:
 	float m_posx;
+	TextureLoader *m_texLoader;
 };

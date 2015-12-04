@@ -29,7 +29,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -46,15 +46,15 @@
     <OutDir>../../Bin/Debug/</OutDir>
     <IntDir>../../Objs/Debug/</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
-    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;../../SDKs/glaux/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;../../SDKs/glaux/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../Bin/Release/</OutDir>
     <IntDir>../../Objs/Release/</IntDir>
-    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools;$(IncludePath)</IncludePath>
-    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;../../SDKs/glaux/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;../../SDKs/glaux/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -63,6 +63,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -94,7 +95,8 @@
     <ClCompile Include="..\GLWindow\GLWindow.cpp" />
     <ClCompile Include="..\GLWindow\QWnd.cpp" />
     <ClCompile Include="..\GLWindow\QWndApp.cpp" />
-    <ClCompile Include="..\ShaderLoader\LoadShaders.cpp" />
+    <ClCompile Include="..\Tools\ShaderLoader\LoadShaders.cpp" />
+    <ClCompile Include="..\Tools\TextureLoader\TextureLoader.cpp" />
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainScene.cpp" />
@@ -104,7 +106,8 @@
     <ClInclude Include="..\GLWindow\QWnd.h" />
     <ClInclude Include="..\GLWindow\QWndApp.h" />
     <ClInclude Include="..\GLWindow\stdafx.h" />
-    <ClInclude Include="..\ShaderLoader\LoadShaders.h" />
+    <ClInclude Include="..\Tools\ShaderLoader\LoadShaders.h" />
+    <ClInclude Include="..\Tools\TextureLoader\TextureLoader.h" />
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="MainScene.h" />

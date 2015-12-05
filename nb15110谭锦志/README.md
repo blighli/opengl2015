@@ -1,9 +1,9 @@
 ##作业说明：
-- 环境 VS2015
+- 环境 windows ;  VS2015
 - 底层框架使用win32 API封装，支持OpenGL 4.3
 - GLWindow/ 提供窗口
 - System/ 提供系统工具：系统时间等
 - Tool/ 封装各类工具：ShaderLoader TextureLoader等
 
 ######作业1：地月系绘制，过程图：
-![](ogl-framework/Bin/Debug/screenshot/grab_screen 2015 12 04 22 54 51.bmp)![](ogl-framework/Bin/Debug/screenshot/grab_screen 2015 12 04 22 54 52.bmp)
+![](pic/1.bmp)![](pic/2.bmp)

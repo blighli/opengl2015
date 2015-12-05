@@ -7,4 +7,4 @@
 
 ######作业1：地月系绘制，过程图：
 
-<img src="pic/1.png"> <img src="pic/2.png">
+![](./pic/1.png)![](./pic/2.png)

@@ -6,4 +6,5 @@
 - Tool/ 封装各类工具：ShaderLoader TextureLoader等
 
 ######作业1：地月系绘制，过程图：
-![](pic/1.png)![](pic/2.png)
+
+<img src="pic/1.png"> <img src="pic/2.png">

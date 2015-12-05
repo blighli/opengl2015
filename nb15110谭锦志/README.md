@@ -7,4 +7,4 @@
 
 ######作业1：地月系绘制，过程图：
 
-![](./pic/1.png)![](./pic/2.png)
+![](http://www.t-uvw.xyz/homework1/1.png)![](http://www.t-uvw.xyz/homework1/2.png)

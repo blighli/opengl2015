@@ -8,12 +8,6 @@
 #include <string>
 #include "../System/System.h"					  // 系统功能
 
-#ifdef _DEBUG
-#pragma comment (lib, "GLToolsd.lib")
-#else
-#pragma comment (lib, "GLTools.lib")
-#endif // _DEBUG
-
 #define MAXTEXTURE	3													// 定义最大的纹理数目
 
 // 在此处定义用户变量:

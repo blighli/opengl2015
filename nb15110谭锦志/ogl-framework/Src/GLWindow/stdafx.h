@@ -17,7 +17,7 @@
 
 #include "GL/glew.h" // 在glut之前包含glew
 #include "GL/wglew.h"
-#include "GL/glut.h" // opengl库
+#include "GL/glut.h" 
 #include "GL/freeglut.h"
 
 #include <stdio.h>

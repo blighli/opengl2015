@@ -46,15 +46,15 @@
     <OutDir>../../Bin/Debug/</OutDir>
     <IntDir>../../Objs/Debug/</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
-    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;../../SDKs/glaux/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;../../SDKs/glaux/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../Bin/Release/</OutDir>
     <IntDir>../../Objs/Release/</IntDir>
-    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;../../SDKs/glaux/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;../../SDKs/glaux/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../../SDKs/freeglut/include;../../SDKs/glew/include;../../SDKs/glm;../../SDKs/GLTools/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../SDKs/freeglut/lib;../../SDKs/glew/lib;../../SDKs/GLTools/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

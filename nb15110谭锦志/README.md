@@ -5,7 +5,4 @@
 - System/ 提供系统工具：系统时间等
 - Tool/ 封装各类工具：ShaderLoader TextureLoader等
 
-######作业1：地月系绘制，过程图：
-
-<img src="http://www.t-uvw.xyz/homework1/1.png">
-<img src="http://www.t-uvw.xyz/homework1/2.png">
+######作业1：地月系绘制

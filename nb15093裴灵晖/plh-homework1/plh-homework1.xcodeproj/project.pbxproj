@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CDCCEAE1C16AB3900B44797 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CDCCEAD1C16AB3900B44797 /* main.cpp */; };
+		1CDCCEB51C16AB4C00B44797 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDCCEB41C16AB4C00B44797 /* OpenGL.framework */; };
+		1CDCCEB71C16AB5500B44797 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDCCEB61C16AB5500B44797 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CDCCEA81C16AB3900B44797 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CDCCEAA1C16AB3900B44797 /* plh-homework1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "plh-homework1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CDCCEAD1C16AB3900B44797 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1CDCCEB41C16AB4C00B44797 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1CDCCEB61C16AB5500B44797 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CDCCEA71C16AB3900B44797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDCCEB71C16AB5500B44797 /* GLUT.framework in Frameworks */,
+				1CDCCEB51C16AB4C00B44797 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CDCCEA11C16AB3900B44797 = {
+			isa = PBXGroup;
+			children = (
+				1CDCCEB61C16AB5500B44797 /* GLUT.framework */,
+				1CDCCEB41C16AB4C00B44797 /* OpenGL.framework */,
+				1CDCCEAC1C16AB3900B44797 /* plh-homework1 */,
+				1CDCCEAB1C16AB3900B44797 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CDCCEAB1C16AB3900B44797 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCCEAA1C16AB3900B44797 /* plh-homework1 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CDCCEAC1C16AB3900B44797 /* plh-homework1 */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCCEAD1C16AB3900B44797 /* main.cpp */,
+			);
+			path = "plh-homework1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CDCCEA91C16AB3900B44797 /* plh-homework1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CDCCEB11C16AB3900B44797 /* Build configuration list for PBXNativeTarget "plh-homework1" */;
+			buildPhases = (
+				1CDCCEA61C16AB3900B44797 /* Sources */,
+				1CDCCEA71C16AB3900B44797 /* Frameworks */,
+				1CDCCEA81C16AB3900B44797 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "plh-homework1";
+			productName = "plh-homework1";
+			productReference = 1CDCCEAA1C16AB3900B44797 /* plh-homework1 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CDCCEA21C16AB3900B44797 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = peilinghui;
+				TargetAttributes = {
+					1CDCCEA91C16AB3900B44797 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 1CDCCEA51C16AB3900B44797 /* Build configuration list for PBXProject "plh-homework1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CDCCEA11C16AB3900B44797;
+			productRefGroup = 1CDCCEAB1C16AB3900B44797 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CDCCEA91C16AB3900B44797 /* plh-homework1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CDCCEA61C16AB3900B44797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDCCEAE1C16AB3900B44797 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1CDCCEAF1C16AB3900B44797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1CDCCEB01C16AB3900B44797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1CDCCEB21C16AB3900B44797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CDCCEB31C16AB3900B44797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CDCCEA51C16AB3900B44797 /* Build configuration list for PBXProject "plh-homework1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CDCCEAF1C16AB3900B44797 /* Debug */,
+				1CDCCEB01C16AB3900B44797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CDCCEB11C16AB3900B44797 /* Build configuration list for PBXNativeTarget "plh-homework1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CDCCEB21C16AB3900B44797 /* Debug */,
+				1CDCCEB31C16AB3900B44797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CDCCEA21C16AB3900B44797 /* Project object */;
+}

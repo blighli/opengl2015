@@ -1,0 +1,5 @@
+文章来源
+文章名称：Online Multiperson Tracking-by-Detection from a Single, Uncalibrated Camera
+来源刊物：TPAMI(IEEE Trans on Pattern Analysis and Machine Intelligence)
+出版社：IEEE
+出版时间：2011-9-NO.9-VOL.33

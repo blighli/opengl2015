@@ -1,0 +1,13 @@
+﻿Build started 2015/12/9 10:16:22.
+     1>Project "E:\opengl\sun_system\sun_system\sun_system.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt sun_system.cpp
+         sun_system.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\opengl\sun_system\Debug\sun_system.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\opengl\sun_system\Debug\sun_system.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\opengl\sun_system\Debug\sun_system.lib" /MACHINE:X86 Debug\sun_system.obj
+         sun_system.vcxproj -> E:\opengl\sun_system\Debug\sun_system.exe
+     1>Done Building Project "E:\opengl\sun_system\sun_system\sun_system.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.17

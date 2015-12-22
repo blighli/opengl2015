@@ -1,0 +1,6 @@
+Modified T-splines ☆
+Hongmei Kang, Falai Chen, , Jiansong Deng
+School of Mathematical Sciences, University of Science and Technology of China, Hefei 230026, PR China
+Received 6 January 2013, Revised 13 June 2013, Accepted 30 September 2013, Available online 17 October 2013
+Computer Aided Geometric Design
+Volume 30, Issue 9, December 2013, Pages 827–843

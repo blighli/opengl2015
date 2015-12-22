@@ -1,0 +1,5 @@
+读书报告资料的来源：
+
+1.《Learning Human Activities and Object Affordances from RGB-D Videos》，作者Hema Swetha Koppula, Rudhir Gupta, Ashutosh Saxena，来自期刊《The International Journal of Robotics Reasearch》,2012年10月
+
+2.《人体动作行为识别研究综述》，作者李瑞峰，王亮亮，王珂，来自期刊《模式识别与人工智能》，2014年1月第27卷第一期第35页

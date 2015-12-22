@@ -1,0 +1,3 @@
+Tobias Langlotz, Thanh Nguyen, Dieter Schmalstieg, and Raphael Grasset. 
+Next Generation Augmented Reality Browsers: Rich, Seamless, and Adaptive.
+Proceedings of the IEEE, 102(2):155-169, February 2014.

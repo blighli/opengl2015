@@ -1,0 +1,6 @@
+原文刊于：
+Journal ACM Transactions on Graphics (TOG) - Proceedings of ACM SIGGRAPH Asia 2015
+Volume 34 Issue 6, November 2015
+Article No. 182 
+作者为：
+Yilong Liu， Feng Xu1, Jinxiang Chai， Xin Tong， Lijuan Wang， Qiang Huo

@@ -1,0 +1,11 @@
+1.标题 ：中文 ：一种基于视频加音频驱动的实时表情捕捉以及动画表示方法
+         英文：Video-audio driven real-time facial animation
+出版物：ACM Transactions on Graphics (TOG), 2015, 34(6): 182.
+相关文献： 
+[1]Liu Y, Xu F, Chai J, et al. Video-audio driven real-time facial animation[J]. ACM Transactions on Graphics (TOG), 2015, 34(6): 182.
+[2]Beeler T, Hahn F, Bradley D, et al. High-quality passive facial performance capture using anchor frames[J]. ACM Transactions on Graphics (TOG), 2011, 30(4): 75.
+[3]Bouaziz S, Wang Y, Pauly M. Online modeling for realtime facial animation[J]. ACM Transactions on Graphics (TOG), 2013, 32(4): 40.
+[4]Cao C, Weng Y, Lin S, et al. 3D shape regression for real-time facial animation[J]. ACM Transactions on Graphics (TOG), 2013, 32(4): 41.
+[5]Cao C, Hou Q, Zhou K. Displaced dynamic expression regression for real-time facial tracking and animation[J]. ACM Transactions on Graphics (TOG), 2014, 33(4): 43.
+[6]Ren S, Cao X, Wei Y, et al. Face alignment at 3000 fps via regressing local binary features[C]//Computer Vision and Pattern Recognition (CVPR), 2014 IEEE Conference on.
+ IEEE, 2014: 1685-1692.

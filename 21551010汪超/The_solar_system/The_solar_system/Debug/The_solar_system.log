@@ -1,0 +1,13 @@
+﻿生成启动时间为 2015/12/5 16:36:33。
+     1>项目“E:\C++pro\SolarSystem\The_solar_system\The_solar_system\The_solar_system.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLUT_BUILDING_LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt new_solar_system.cpp
+         new_solar_system.cpp
+       Link:
+         D:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\C++pro\SolarSystem\The_solar_system\Debug\The_solar_system.exe" /INCREMENTAL /NOLOGO glaux.lib glu32.lib opengl32.lib glut32.lib glut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\C++pro\SolarSystem\The_solar_system\Debug\The_solar_system.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\C++pro\SolarSystem\The_solar_system\Debug\The_solar_system.lib" /MACHINE:X86 Debug\new_solar_system.obj
+         The_solar_system.vcxproj -> E:\C++pro\SolarSystem\The_solar_system\Debug\The_solar_system.exe
+     1>已完成生成项目“E:\C++pro\SolarSystem\The_solar_system\The_solar_system\The_solar_system.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.31

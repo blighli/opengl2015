@@ -1,0 +1,5 @@
+文章名：High-quality hair modeling from a single portrait photo
+作者姓名：Menglei Chai, Linjie Luo, Kalyan Sunkavalli, Nathan Carr, Sunil Hadap, Kun Zhou
+期刊名：ACM Transactions on Graphics (TOG) - Proceedings of ACM SIGGRAPH Asia 2015 TOG Homepage archive
+年份：Volume 34 Issue 6, November 2015
+文章号：Article No. 204

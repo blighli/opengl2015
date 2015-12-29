@@ -185,6 +185,9 @@ BOOL GLWindow::UpdateGL(GLvoid)
 
 GLvoid GLWindow::DestroyGL(GLvoid)
 {
+	// 注销计时器
+	::KillTimer(m_hWnd, m_timerFrame);
+
 	if (m_hRc)
 	{
 		if (!wglMakeCurrent(NULL, NULL))
@@ -207,9 +210,6 @@ GLvoid GLWindow::DestroyGL(GLvoid)
 		// 释放窗口句柄失败
 		m_hWnd = NULL;
 	}
-
-	// 注销计时器
-	::KillTimer(m_hWnd, m_timerFrame);
 }
 
 void GLWindow::ViewMode()

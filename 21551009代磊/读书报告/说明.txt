@@ -1,0 +1,3 @@
+读书笔记 - 1，代磊，21551009
+GPU的OpenCL的具体程序对CPU的性能改进 
+2012 13th International Conference on Parallel and Distributed Computing, Applications and Technologies

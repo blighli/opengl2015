@@ -1,0 +1,4 @@
+论文参考：
+Joubert, N., Roberts, M., Truong, A., Berthouzoz, F., Hanrahan, P. 2015. An Interactive Tool for Designing Quadrotor Camera Shots. ACM Trans. Graph. 34, 6, Article 238 (November 2015), 11 pages.DOI = 10.1145/2816795.2818106 http://doi.acm.org/10.1145/2816795.2818106. 
+
+视频是和论文配套的。

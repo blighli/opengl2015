@@ -1,0 +1,8 @@
+论文题目：
+Reduing Snapshots to Points: A Visual Analytics Approach to Dynamic Network Exploration
+                                          、
+作者：Stef van den Elzen,Danny Holten,Jorik Blaas,Jarke J. Van Wijk
+
+发表会议：VAST 2015
+
+出处：IEEE Transactions on Visualization and Computer...,?2015,?22(1):1-1
